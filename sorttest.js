@@ -50,12 +50,9 @@ var sortedData = data.sort( function( a, b ) {
   return a[ 'to' ] === b[ 'from' ] ? 0 : 1;
 } );
 
-console.log( data );
+console.log( JSON.stringify(sortedData, null, 2) );
 
-
-Output 
-
-[
+"[
   {
     "from": "Barcelona",
     "to": "New York",
@@ -101,4 +98,4 @@ Output
     "transportno": "M31, M32, M33",
     "seatno": "Any"
   }
-]
+]"
